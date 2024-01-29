@@ -1,35 +1,57 @@
 ---
-title: Home
 layout: home
+title: Home
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+## Biofilter Overview
+Biofilter provides a convenient single interface for accessing multiple publicly available human genetic data sources that have been compiled in the supporting database of the Library of Knowledge Integration (LOKI). Information within LOKI includes genomic locations of SNPs and genes, as well as known relationships among genes and proteins such as interaction pairs, pathways and ontological categories.Via Biofilter 2.0 researchers can:·
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+* Annotate genomic location or region based data, such as results from association studies, or CNV analyses, with relevant biological knowledge for deeper interpretation.
+* Filter genomic location or region based data on biological criteria, such as filtering a series SNPs to retain only SNPs present in specific genes within specific pathways of interest.  
+* Generate Predictive Models for gene-gene, SNP-SNP, or CNV-CNV interactions based on biological information, with priority for models to be tested based on biological relevance, thus narrowing the search space and reducing multiple hypothesis-testing.
 
-More specifically, the created site:
+## Data Schema
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## Open-Source Code
+* [Ritchie Lab GitHub](https://github.com/RitchieLab/biofilter)
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
 
-To get started with creating a site, simply:
+## Releases
+* Biofilter - 3.0.0, released on March 25, 2024
+* Biofilter - 2.4.2, released on March 15, 2019
+* Biofilter - 2.4.1
+* Biofilter - 2.4.0
+* Biofilter - 2.2.0
+* Biofilter - 2.1.0
+* Biofilter - 1.1.0
+* Biofilter - 0.5.1
+* Previous User Manuals
+    * [2.4 User Manual](https://ritchielab.org/files/RL_software/biofilter-manual-2.4.pdf)
+    * [2.2 User Manual](https://ritchielab.org/files/RL_software/biofilter-manual-2.2.pdf)
+    * [2.1 User Manual](https://ritchielab.org/files/RL_software/biofilter-manual-2.1.pdf)
+    * [1.1 User Manual](https://ritchielab.org/files/RL_software/biofilter-manual-1.1.0.pdf)
+    * [0.5 User Manual](https://ritchielab.org/files/RL_software/biofilter-reference.pdf)
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+## References
+Holzinger ER, Verma SS, Moore CB, Hall M, De R, Gilbert-Diamond D, Lanktree MB, Pankratz N, Amuzu A, Burt A, Dale C, Dudek S, Furlong CE, Gaunt TR, Kim DS, Riess H, Sivapalaratnam S, Tragante V, van Iperen EPA, Brautbar A, Carrell DS, Crosslin DR, Jarvik GP, Kuivaniemi H, Kullo IJ, Larson EB, Rasmussen-Torvik LJ, Tromp G, Baumert J, Cruickshanks KJ, Farrall M, Hingorani AD, Hovingh GK, Kleber ME, Klein BE, Klein R, Koenig W, Lange LA, Mӓrz W, North KE, Charlotte Onland-Moret N, Reiner AP, Talmud PJ, van der Schouw YT, Wilson JG, Kivimaki M, Kumari M, Moore JH, Drenos F, Asselbergs FW, Keating BJ, Ritchie MD. Discovery and replication of SNP-SNP interactions for quantitative lipid traits in over 60,000 individuals. BioData Min. 2017 Jul 24;10:25. doi: 10.1186/s13040-017-0145-5. PMID: 28770004; PMCID: PMC5525436.
 
-----
+Kim D, Lucas A, Glessner J, Verma SS, Bradford Y, Li R, Frase AT, Hakonarson H, Peissig P, Brilliant M, Ritchie MD. Biofilter as a Functional Annotation Pipeline for Common and Rare Copy Number Burden. Pac Symp Biocomput. 2016;21:357-68. PMID: 26776200; PMCID: PMC4722964.
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+Pendergrass SA, Verma SS, Holzinger ER, Moore CB, Wallace J, Dudek SM, Huggins W, Kitchner T, Waudby C, Berg R, McCarty CA, Ritchie MD. Next-generation analysis of cataracts: determining knowledge driven gene-gene interactions using Biofilter, and gene-environment interactions using the PhenX Toolkit. Pac Symp Biocomput. 2013:147-58. Corrected and republished in: Pac Symp Biocomput. 2015;:495-505. PMID: 23424120; PMCID: PMC3615413.
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+Hohman TJ, Bush WS, Jiang L, Brown-Gentry KD, Torstenson ES, Dudek SM, Mukherjee S, Naj A, Kunkle BW, Ritchie MD, Martin ER, Schellenberg GD, Mayeux R, Farrer LA, Pericak-Vance MA, Haines JL, Thornton-Wells TA; Alzheimer's Disease Genetics Consortium. Discovery of gene-gene interactions across multiple independent data sets of late onset Alzheimer disease from the Alzheimer Disease Genetics Consortium. Neurobiol Aging. 2016 Feb;38:141-150. doi: 10.1016/j.neurobiolaging.2015.10.031. Epub 2015 Nov 6. PMID: 26827652; PMCID: PMC4735733.
+
+Hall MA, Verma SS, Wallace J, Lucas A, Berg RL, Connolly J, Crawford DC, Crosslin DR, de Andrade M, Doheny KF, Haines JL, Harley JB, Jarvik GP, Kitchner T, Kuivaniemi H, Larson EB, Carrell DS, Tromp G, Vrabec TR, Pendergrass SA, McCarty CA, Ritchie MD. Biology-Driven Gene-Gene Interaction Analysis of Age-Related Cataract in the eMERGE Network. Genet Epidemiol. 2015 Jul;39(5):376-84. doi: 10.1002/gepi.21902. Epub 2015 May 17. PMID: 25982363; PMCID: PMC4550090.
+
+Pendergrass SA, Frase A, Wallace J, Wolfe D, Katiyar N, Moore C, Ritchie MD. Genomic analyses with biofilter 2.0: knowledge driven filtering, annotation, and model development. BioData Min. 2013 Dec 30;6(1):25. doi: 10.1186/1756-0381-6-25. PMID: 24378202; PMCID: PMC3917600.
+
+De R, Verma SS, Holzinger E, Hall M, Burt A, Carrell DS, Crosslin DR, Jarvik GP, Kuivaniemi H, Kullo IJ, Lange LA, Lanktree MB, Larson EB, North KE, Reiner AP, Tragante V, Tromp G, Wilson JG, Asselbergs FW, Drenos F, Moore JH, Ritchie MD, Keating B, Gilbert-Diamond D. Identifying gene-gene interactions that are highly associated with four quantitative lipid traits across multiple cohorts. Hum Genet. 2017 Feb;136(2):165-178. doi: 10.1007/s00439-016-1738-7. Epub 2016 Nov 15. PMID: 27848076.
+
+Grady BJ, Torstenson ES, McLaren PJ, DE Bakker PI, Haas DW, Robbins GK, Gulick RM, Haubrich R, Ribaudo H, Ritchie MD. Use of biological knowledge to inform the analysis of gene-gene interactions involved in modulating virologic failure with efavirenz-containing treatment regimens in ART-naïve ACTG clinical trials participants. Pac Symp Biocomput. 2011:253-64. doi: 10.1142/9789814335058_0027. PMID: 21121053; PMCID: PMC3094912.
+
+Bush WS, Dudek SM, Ritchie MD. Biofilter: a knowledge-integration system for the multi-locus analysis of genome-wide association studies. Pac Symp Biocomput. 2009:368-79. PMID: 19209715; PMCID: PMC2859610.
+
+
