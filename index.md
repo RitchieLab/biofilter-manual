@@ -1,24 +1,60 @@
 ---
-layout: home
+layout: default
 title: Home
 nav_order: 1
 ---
 
-## Biofilter Overview
-Biofilter provides a convenient single interface for accessing multiple publicly available human genetic data sources that have been compiled in the supporting database of the Library of Knowledge Integration (LOKI). Information within LOKI includes genomic locations of SNPs and genes, as well as known relationships among genes and proteins such as interaction pairs, pathways and ontological categories.Via Biofilter 2.0 researchers can:·
-
-* Annotate genomic location or region based data, such as results from association studies, or CNV analyses, with relevant biological knowledge for deeper interpretation.
-* Filter genomic location or region based data on biological criteria, such as filtering a series SNPs to retain only SNPs present in specific genes within specific pathways of interest.  
-* Generate Predictive Models for gene-gene, SNP-SNP, or CNV-CNV interactions based on biological information, with priority for models to be tested based on biological relevance, thus narrowing the search space and reducing multiple hypothesis-testing.
-
-## Data Schema
+* TOC
+{:toc}
 
 
-## Open-Source Code
+* TOC
+{:toc}
+
+# What is Biofilter?
+Biofilter is a software tool that provides a convenient single interface for accessing multiple publicly available human genetic data sources. These sources include information about the genomic locations of SNPs and genes, as well as relationships among genes and proteins such as interaction pairs, pathways and ontological categories. Biofilter will cross-reference all of this prior biological knowledge in several different ways, with any number of combinations of input data.
+
+
+# Why use Biofilter?
+While genome-wide association studies (GWAS) have been used to identify genetic variants that contribute to disease susceptibility on a single-variant single-phenotype level, other approaches can be used to investigate the association between genetic and phenotypic variation. Use of the software tool Biofilter is one such example of a complementary but alternate approach. Biofilter allows users to work with a range of types and formats of data, including SNPs, copy number variant (CNV), and gene location information, along with a repository of diverse biological knowledge distilled from multiple external databases. Via Biofilter, users can annotate data or results with relevant biological knowledge for analysis and interpretation.  Biofilter also allows users to filter data based on biological criteria, allowing users to harness information from multiple sources for the reduction of data for analysis. Finally, Biofilter can be used to generate biological-information derived pairwise interaction models for reducing the computational and statistical burden of large-scale interaction data analysis, while also providing a biological foundation to support the relevance of statistically significant results. The use of Biofilter may help to elucidate a new picture of the relationship between genetic architecture and complex phenotypic outcomes such as the presence or absence of disease. 
+
+
+# Data Schema
+
+
+# Data Types
+
+|Symbol|Data Type|Description|
+|---|---|---|
+|**SNP**|![snp](/assets/images/data-types/snp.png)|Specified by an RS number, i.e. “rs12345678”; Used to refer to a known and documented SNP whose position can be retrieved from LOKI|
+|**Position**|![position](/assets/images/data-types/position.png)|Specified by a chromosome and basepair location, i.e. “chr1:234”; Used to refer to any single genomic location, such as a SNP, SNV, rare variant, or any other position of interest|
+|**Region**|![region](/assets/images/data-types/region.png)|Specified by a chromosome and basepair range, i.e. “chr1:234-567”; Used to refer to any genomic region, such as CNV, insertion/deletion (indel), gene coding region, evolutionarily conserved region (ECR), functional region, regulatory region, or any other region of interest|
+|**Gene**|![gene](/assets/images/data-types/gene.png)|Specified by a name or other identifier, i.e. “ABG1” or “ENSG00000123456”; used to refer to a known or documented gene, whose genomic region and associations with any pathways, interactions, or other groups can be retrieved from LOKI|
+|**Group**|![group](/assets/images/data-types/group.png)|Specified by a name or other identified, i.e. “inflammatory process” or “GO:0001234”; Used to refer to known and documented pathway, protein families, ontological group, interaction pairs, or any groupings of genes, proteins, genomic regions, or diseases|
+|**Source**|![source](/assets/images/data-types/source.png)|Specified by name, i.e. “GAAD” or “DisGeNET”; Used to refer to a specific external data source|
+
+# Analysis Modes
+
+|**Filtering**|![filtering](/assets/images/analysis-modes/filtering.png)|Given input data, Biofilter can cross-reference it using stored relationships to generate a filtered dataset of supported data types|
+|**Annotation**|![annotation](/assets/images/analysis-modes/annotation.png)|As opposed to ‘Filtering’, input data can be annotated with additional properties without subsetting the original list provided|
+|**Filtering**|![modeling](/assets/images/analysis-modes/modeling.png)|In addition to cross-referencing stored relationships, combo of input data can be used to reduce the search space with pairwise interactions models and groupings|
+
+
+# Primary and Alternative Input Datasets
+
+# Identifiers
+
+
+
+
+# Data Schema
+
+
+# Open-Source Code
 * [Ritchie Lab GitHub](https://github.com/RitchieLab/biofilter)
 
 
-## Releases
+# Releases
 * Biofilter - 3.0.0, released on March 25, 2024
 * Biofilter - 2.4.2, released on March 15, 2019
 * Biofilter - 2.4.1
@@ -35,7 +71,7 @@ Biofilter provides a convenient single interface for accessing multiple publicly
     * [0.5 User Manual](https://ritchielab.org/files/RL_software/biofilter-reference.pdf)
 
 
-## References
+# References
 Holzinger ER, Verma SS, Moore CB, Hall M, De R, Gilbert-Diamond D, Lanktree MB, Pankratz N, Amuzu A, Burt A, Dale C, Dudek S, Furlong CE, Gaunt TR, Kim DS, Riess H, Sivapalaratnam S, Tragante V, van Iperen EPA, Brautbar A, Carrell DS, Crosslin DR, Jarvik GP, Kuivaniemi H, Kullo IJ, Larson EB, Rasmussen-Torvik LJ, Tromp G, Baumert J, Cruickshanks KJ, Farrall M, Hingorani AD, Hovingh GK, Kleber ME, Klein BE, Klein R, Koenig W, Lange LA, Mӓrz W, North KE, Charlotte Onland-Moret N, Reiner AP, Talmud PJ, van der Schouw YT, Wilson JG, Kivimaki M, Kumari M, Moore JH, Drenos F, Asselbergs FW, Keating BJ, Ritchie MD. Discovery and replication of SNP-SNP interactions for quantitative lipid traits in over 60,000 individuals. BioData Min. 2017 Jul 24;10:25. doi: 10.1186/s13040-017-0145-5. PMID: 28770004; PMCID: PMC5525436.
 
 Kim D, Lucas A, Glessner J, Verma SS, Bradford Y, Li R, Frase AT, Hakonarson H, Peissig P, Brilliant M, Ritchie MD. Biofilter as a Functional Annotation Pipeline for Common and Rare Copy Number Burden. Pac Symp Biocomput. 2016;21:357-68. PMID: 26776200; PMCID: PMC4722964.
