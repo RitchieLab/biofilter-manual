@@ -5,7 +5,7 @@ nav_order: 5
 has_children: true
 ---
 
-* TOC
+
 {:toc}
 
 Via Biofilter 3.0, researchers can additionally:
