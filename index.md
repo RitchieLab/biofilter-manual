@@ -49,23 +49,6 @@ While genome-wide association studies (GWAS) have been used to identify genetic 
 * [Ritchie Lab GitHub](https://github.com/RitchieLab/biofilter)
 
 
-# Releases
-* Biofilter [3.0.0] - released on March 25, 2024
-* Biofilter [2.4.2](https://github.com/RitchieLab/biofilter) - released on March 15, 2019
-* Biofilter [2.4.1](https://ritchielab.org/session.php?file=biofilter-2.4.1.tar.gz)
-* Biofilter [2.4.0](https://ritchielab.org/session.php?file=biofilter-2.4.0.tar.gz)
-* Biofilter [2.2.0](https://github.com/RitchieLab/biofilter/tree/master/tags/2.0.0)
-* Biofilter [2.1.0](https://ritchielab.org/session.php?file=biofilter-2.1.0.tar.gz)
-* Biofilter [1.1.0](https://github.com/RitchieLab/biofilter/tree/master/tags/1.1.0)
-* Biofilter [0.5.1](https://github.com/RitchieLab/biofilter/tree/master/tags/0.5.1)
-* Previous User Manuals
-    * [2.4 User Manual](https://ritchielab.org/files/RL_software/biofilter-manual-2.4.pdf)
-    * [2.2 User Manual](https://ritchielab.org/files/RL_software/biofilter-manual-2.2.pdf)
-    * [2.1 User Manual](https://ritchielab.org/files/RL_software/biofilter-manual-2.1.pdf)
-    * [1.1 User Manual](https://ritchielab.org/files/RL_software/biofilter-manual-1.1.0.pdf)
-    * [0.5 User Manual](https://ritchielab.org/files/RL_software/biofilter-reference.pdf)
-
-
 # References
 Holzinger ER, Verma SS, Moore CB, Hall M, De R, Gilbert-Diamond D, Lanktree MB, Pankratz N, Amuzu A, Burt A, Dale C, Dudek S, Furlong CE, Gaunt TR, Kim DS, Riess H, Sivapalaratnam S, Tragante V, van Iperen EPA, Brautbar A, Carrell DS, Crosslin DR, Jarvik GP, Kuivaniemi H, Kullo IJ, Larson EB, Rasmussen-Torvik LJ, Tromp G, Baumert J, Cruickshanks KJ, Farrall M, Hingorani AD, Hovingh GK, Kleber ME, Klein BE, Klein R, Koenig W, Lange LA, Mӓrz W, North KE, Charlotte Onland-Moret N, Reiner AP, Talmud PJ, van der Schouw YT, Wilson JG, Kivimaki M, Kumari M, Moore JH, Drenos F, Asselbergs FW, Keating BJ, Ritchie MD. Discovery and replication of SNP-SNP interactions for quantitative lipid traits in over 60,000 individuals. BioData Min. 2017 Jul 24;10:25. doi: 10.1186/s13040-017-0145-5. PMID: 28770004; PMCID: PMC5525436.
 

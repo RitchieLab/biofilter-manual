@@ -1,12 +1,17 @@
 ---
 layout: default
-title: Biofilter 2.0
+title: Input and Output File Formats
 nav_order: 4
 has_children: true
 ---
 
 * TOC
 {:toc}
+
+# Input and Output File Formats
+
+For all input files in Biofilter, lines beginning with the symbol “#” will be ignored. This is useful for
+placing comments within input files that will not be a part of the analysis.
 
 Via Biofilter 2.0 researchers can:·
 

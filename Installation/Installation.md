@@ -1,11 +1,10 @@
 ---
 layout: default
-title: Version 2 - Installation
-parent: Biofilter 2.0
-nav_order: 2
+title: Installation
+nav_order: 3
 ---
 
-# Installation Instructions for Biofilter 2.0
+# Installation Instructions for Biofilter 3.0
 
 ## Prerequisites
 The following prerequisites are required to compile the LOKI database and run Biofilter:

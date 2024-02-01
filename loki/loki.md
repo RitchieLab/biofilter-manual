@@ -1,7 +1,7 @@
 ---
 layout: default
 title: LOKI - Library of Knowledge Integration
-nav_order: 3
+nav_order: 2
 has_children: false
 ---
 
@@ -35,3 +35,7 @@ LOKI must be generated on the local system before Biofilter can be used, but bec
 |Pharmacogenomics Knowledgebase (PharmGKB)| | |A knowledge base of human genetic variation on drug response used by Biofilter for pathway-based data|
 |Reactome| | |A manually curated and peer-reviewed database used by Biofilter for pathway and network relationships between genes|
 |UCSC Genome Browser| | |An interactive online and downloadable resource with genome sequence and alignment data for major model organisms used by Biofilter to access location information for evolutionarily-conserved regions (ECRs) and ORegAnno's regulatory region data|
+
+# Relational Diagram
+
+![loki db  schema](../images/loki-db-schema.svg)
