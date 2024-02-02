@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Deprecated Version
+title: Deprecated Versions
 nav_order: 8
 ---
 
-# Releases
+# Previous Biofilter Releases
 * Biofilter [3.0.0] - released on March 25, 2024
 * Biofilter [2.4.2](https://github.com/RitchieLab/biofilter) - released on March 15, 2019
 * Biofilter [2.4.1](https://ritchielab.org/session.php?file=biofilter-2.4.1.tar.gz)
