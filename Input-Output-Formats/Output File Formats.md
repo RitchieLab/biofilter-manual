@@ -70,6 +70,8 @@ separate column from any of the six data type outputs (such as “`region_chr`�
 
 Biofilter currently supports the following outputs:
 
+| **Column** | **Information** |
+|---|---|
 |snp|Shorthand for: snp_label|
 |snp_id|The SNP’s RS number, with no prefix; if an input SNP was merged, the current (new) RS number is shown
 |snp_label|The SNP’s RS number, with “rs” prefix; if an input SNP was merged, the user-provided (old) RS number is shown
