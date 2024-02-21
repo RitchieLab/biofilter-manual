@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Anotation Examples
+title: Annotation Examples
 parent: Examples
 nav_order: 1
 ---
