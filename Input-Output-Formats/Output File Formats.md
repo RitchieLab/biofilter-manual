@@ -75,7 +75,7 @@ Biofilter currently supports the following outputs:
 
 | **Column** | **Information** |
 |---|---|
-|user_input|Provided user input; snp_label, position_label, gene_label, region_label, group_label, or source_label
+|user_input|Provided user input outputed as first column by default; snp_label, position_label, gene_label, region_label, group_label, or source_label
 |snp|Shorthand for: snp_label|
 |snp_id|The SNP’s RS number, with no prefix; if an input SNP was merged, the current (new) RS number is shown
 |snp_label|The SNP’s RS number, with “rs” prefix; if an input SNP was merged, the user-provided (old) RS number is shown
@@ -132,7 +132,8 @@ Biofilter currently supports the following outputs:
 |gwas_allele95ci|The allele 95% confidence interval of the GWAS association
 |gwas_riskAfreq|The risk allele frequency of the GWAS association
 |gwas_pubmed|The PubMedID of the GWAS association
-|disease|Shorthand for: disease_label
-|disease_category|The categories of the disease match
+|disease|Shorthand for: disease_label and disease_category
+|disease_label|The provided label for the disease
+|disease_category|The provided category of the disease
 
 Inspection of Biofilter’s source code may reveal additional supported columns. They are not documented here because they are only used for internal or debugging purposes and may change or disappear in a future release; use them at your own risk.
