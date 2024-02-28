@@ -30,7 +30,7 @@ The input file format for position data is similar to the `MAP` file format used
 
 If all four of these columns are provided, then any additional columns will be stored and returned via the “`position_extra`” output column.
 
-Since the genetic distance column is not used by Biofilter, it may be omitted entirely for a three-column format (equivalent to PLINK’s --map3 option). The label column may also be omitted for a two-column format including only the chromosome and position; in this case a label of the form “`chr1:2345`” will be automatically generated. Note that if the label column is used, it does not necessarily have to be a known SNP’s RS number; whatever arbitrary label is provided will be used by Biofilter to refer to the position whenever it appears in any output file.
+Since the genetic distance column is not used by Biofilter, it may be omitted entirely for a three-column format (equivalent to PLINK’s `--map3` option). The label column may also be omitted for a two-column format including only the chromosome and position; in this case a label of the form “`chr1:2345`” will be automatically generated. Note that if the label column is used, it does not necessarily have to be a known SNP’s RS number; whatever arbitrary label is provided will be used by Biofilter to refer to the position whenever it appears in any output file.
 
 Example:
 ```
@@ -62,11 +62,11 @@ Example:
 # Gene and Group List Input
 Like the SNP input file format, a gene or group input file may simply be a single column of identifiers. Unlike the SNP file format, gene or group input files may alternatively include two columns separated by a tab character; in this case, the first column lists the type of the identifier which is in the second column on the same line, and any additional columns after these two will be stored and returned via the “`gene_extra`” or “`group_extra`” output columns.
 
-The `GENE_IDENTIFIER_TYPE` and `GROUP_IDENTIFIER_TYPE` options specify the default type for any user-provided gene or group identifiers, respectively. This applies to any identifiers given directly via the `GENE` or `GROUP` options, and any identifiers listed in single-column gene or group list input files. These options do not apply to two-column gene or group input files, since those files specify their own identifier types in the first column.
+The `--gene-identifier-type` and `--group-identifier-type` options specify the default type for any user-provided gene or group identifiers, respectively. This applies to any identifiers given directly via the `--gene` or `--group` options, and any identifiers listed in single-column gene or group list input files. These options do not apply to two-column gene or group input files, since those files specify their own identifier types in the first column.
 
-An empty identifier type (a blank in the first column of a two-column gene input file, or a `GENE_IDENTIFIER_TYPE`/`GROUP_IDENTIFIER_TYPE` option with no argument) causes Biofilter to attempt to interpret the identifier using any known type. The special identifier type “`-`” instead causes Biofilter to interpret identifiers as primary labels of genes or groups, and the special type “`=`” accepts the `gene_id` or `group_id` output values from a previous Biofilter run.
+An empty identifier type (a blank in the first column of a two-column gene input file, or a `--gene-identifier-type`/`--group-identifier-type` option with no argument) causes Biofilter to attempt to interpret the identifier using any known type. The special identifier type “`-`” instead causes Biofilter to interpret identifiers as primary labels of genes or groups, and the special type “`=`” accepts the `gene_id` or `group_id` output values from a previous Biofilter run.
 
-It is important to recall that gene and group identifiers can vary in their degree of uniqueness. For analyses that depend on a gene’s genomic region (such as comparisons with SNPs or other positions) it may be preferable to provide the regions directly rather than relying on gene identifiers. If a single identifier matches more than one gene or group, Biofilter will ignore it unless the appropriate `ALLOW_AMBIGUOUS_GENES` or `ALLOW_AMBIGUOUS_GROUPS` option is used.
+It is important to recall that gene and group identifiers can vary in their degree of uniqueness. For analyses that depend on a gene’s genomic region (such as comparisons with SNPs or other positions) it may be preferable to provide the regions directly rather than relying on gene identifiers. If a single identifier matches more than one gene or group, Biofilter will ignore it unless the appropriate `--allow-ambiguous-genes` or `--allow-ambiguous-groups` option is used.
 
 Examples:
 ```
@@ -100,7 +100,7 @@ The source header line must begin with a single word which serves as the source�
 
 Each group section must begin with a section header line. The section header line must begin with the word “`GROUP`”, followed by a single word which serves as the group’s shorthand label. Any additional words on this section header line will be stored as a longer description of the group.
 
-Each line after a group section header, and before the next group section (identified by a line beginning with the word “GROUP”), may contain any number of gene identifiers which will be assigned to this group. These gene identifiers will be interpreted according to the `GENE_IDENTIFIER_TYPE` option.
+Each line after a group section header, and before the next group section (identified by a line beginning with the word “GROUP”), may contain any number of gene identifiers which will be assigned to this group. These gene identifiers will be interpreted according to the `--gene-identifier-type` option.
 
 Example:
 ```
