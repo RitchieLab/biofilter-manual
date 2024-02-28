@@ -10,6 +10,79 @@ Biofilter has a variety of arguments, broadly organized into a few different cat
 * TOC
 {:toc}
 
+# Analysis Options:
+
+| **Option** | **Arguments** | **Information** |
+|---|---|---|
+| `--filter` | \[ \[TYPE1] \[TYPE2] \[...] ] | Default: *NONE*. Perform a filtering analysis which outputs the specified type(s). If a single type is requested, the output will be in exactly the same format that Biofilter requires as input for that data type; additional types are simply appended left-to-right in the order requested. |
+| `--annotate` | \[ \[TYPE1] \[TYPE2] \[...] \[:] \[TYPE1] \[TYPE2] ] | Default: *NONE*. Perform an annotation analysis which outputs the specified type(s). The starting point for the annotation is the first specified type (or, if a colon is used, the combination of types before the colon); all additional types are optional and will be left blank if no suitable match can be found. |
+| `--model` | \[ \[TYPE1] \[TYPE2] \[...] \[:] \[TYPE1] \[TYPE2] ] | Default: *NONE*. Perform a modeling analysis which generates models of the specified type(s). If a colon is used, the types before and after the colon will appear on the left and right sides of the generated models, respectively; with no colon, both sides of the models will have the same type(s). |
+| `--paris` | [yes \| **no**] | Default: **no**. Performs PARIS analysis using the provided SNP or position association test results and LD block regions. See the PARIS Appendix for more information. TODO: what is this and where to link to? |
+
+# Types for analysis option arguments:
+
+| **types** | **Information** |
+|---|---|
+|user_input|Provided user input outputed as first column by default; snp_label, position_label, gene_label, region_label, group_label, or source_label
+|snp|Shorthand for: snp_label
+|snp_id|The SNP’s RS number, with no prefix; if an input SNP was merged, the current (new) RS number is shown
+|snp_label|The SNP’s RS number, with “rs” prefix; if an input SNP was merged, the user-provided (old) RS number is shown
+|snp_extra|Any extra columns provided in the SNP input file
+|position|Shorthand for: position_chr , position_label , position_pos
+|position_id|An arbitrary unique ID number for the position; can be used to distinguish unlabeled positions with identical genomic locations
+|position_label|The provided (or generated) label for an input position, or the RS number (with “rs” prefix) for a SNP position from the knowledge database
+|position_chr|The position’s chromosome number or name
+|position_pos|The position’s basepair location
+|position_extra|Any extra columns provided in the position input file
+|region|Shorthand for: region_chr , region_label , region_start , region_stop
+|region_id|An arbitrary unique ID number for the region; can be used to distinguish unlabeled regions with identical genomic start and stop locations
+|region_label|The provided (or generated) label for an input region, or the primary label for a region from the knowledge database
+|region_chr|The region’s chromosome number or name
+|region_start|The region’s basepair start location
+|region_stop|The region’s basepair stop location
+|region_extra|Any extra columns provided in the region input file 
+|generegion|Shorthand for: region_chr , gene_label , region_start , region_stop Similar to “region” except that only gene regions from the knowledge database are returned, even if the user also provided input regions
+|gene|Shorthand for: gene_label
+|gene_id|An arbitrary unique ID number for the gene; can be used to distinguish genes with identical labels
+|gene_label|The provided identifier for an input gene, or the primary label for a gene from the knowledge database
+|gene_description|The gene’s descriptive text from the knowledge database, if any
+|gene_identifiers|All known identifiers for the gene, of any type; formatted as “type:name\|type:name\|…”
+|gene_symbols|All known “symbol”-type identifiers (symbolic aliases) for the gene, formatted as “symbol\|symbol\|…”
+|gene_extra|Any extra columns provided in the gene input file
+|upstream|Shorthand for: upstream_label , upstream_distance
+|upstream_id|An arbitrary unique ID number for the closest upstream gene
+|upstream_label|The primary label for the closest upstream gene
+|upsteam_distance|The distance to the closest upstream gene
+|upsteam_start|The closest upstream gene’s basepair start location
+|upsteam_stop|The closest upstream gene’s basepair stop location
+|downstream|Shorthand for: downstream_label , downstream_distance
+|downstream_id|An arbitrary unique ID number for the closest downstream gene
+|downstream_label|The primary label for the closest downstream gene
+|downstream_distance|The distance to the closest downstream gene
+|downstream_start|The closest downstream gene’s basepair start location
+|downstream_stop|The closest downstream gene’s basepair stop location
+|group|Shorthand for: group_label
+|group_id|An arbitrary unique ID number for the group; can be used to distinguish groups with identical labels
+|group_label|The provided identifier for an input group, or the primary label for a group from the knowledge database
+|group_description|The group’s descriptive text from the knowledge database, if any
+|group_identifiers|All known identifiers for the group, of any type; formatted as \|“type:name\|type:name\|…”
+|group_extra|Any extra columns provided in the group input file
+|source|Shorthand for: source_label
+|source_id|An arbitrary unique ID number for the source; included for completeness
+|source_label|The source’s name
+|gwas|Shorthand for: gwas_trait , gwas_snps , gwas_orbeta , gwas_allele95ci , gwas_riskAfreq , gwas_pubmed
+|gwas_rs|The RS# which led to the GWAS annotation match
+|gwas_chr|The chromosome on which the GWAS match was found
+|gwas_pos|The basepair location at which the GWAS match was found
+|gwas_trait|The GWAS annotation’s associated trait or phenotype
+|gwas_snps|The full list of SNPs in the GWAS association
+|gwas_orbeta|The odds ratio or beta of the GWAS association
+|gwas_allele95ci|The allele 95% confidence interval of the GWAS association
+|gwas_riskAfreq|The risk allele frequency of the GWAS association
+|gwas_pubmed|The PubMedID of the GWAS association
+|disease|Shorthand for: disease_label and disease_category
+|disease_label|The provided label for the disease
+|disease_category|The provided category of the disease
 
 # Configuration Options
 
@@ -124,16 +197,3 @@ Biofilter has a variety of arguments, broadly organized into a few different cat
 | `--overwrite` | [yes \| **no**] | Default: **no**. Allows Biofilter to erase and overwrite any output file which already exists. When disabled (the default), Biofilter exits with an error to prevent any existing files from being overwritten. |
 | `--stdout` | [yes \| **no**] | Default: **no**. Causes all output data to be written directly to the screen rather than saved to a file. On most platforms this output can then be sent directly into another program. |
 | `--report-invalid-input` | [yes \| **no**] | Default: **no**. Causes any input data which was not understood by Biofilter to be copied into a separate output report file. This file also includes comments describing the error with each piece of data. |
-
-
-# TODO:
-TODO: different options for output below, need to rewrite to link to their respective pages
-Also consider moving this up to be the very first set of arguments listed, since these are the primary functions of biofilter and all other arguments are additional components of it
-
-
-| **Option** | **Arguments** | **Information** |
-|---|---|---|
-| `--filter` | \[ \[TYPE1] \[TYPE2] \[...] ] | Default: *NONE*. Perform a filtering analysis which outputs the specified type(s). If a single type is requested, the output will be in exactly the same format that Biofilter requires as input for that data type; additional types are simply appended left-to-right in the order requested. |
-| `--annotate` | \[ \[TYPE1] \[TYPE2] \[...] \[:] \[TYPE1] \[TYPE2] ] | Default: *NONE*. Perform an annotation analysis which outputs the specified type(s). The starting point for the annotation is the first specified type (or, if a colon is used, the combination of types before the colon); all additional types are optional and will be left blank if no suitable match can be found. |
-| `--model` | \[ \[TYPE1] \[TYPE2] \[...] \[:] \[TYPE1] \[TYPE2] ] | Default: *NONE*. Perform a modeling analysis which generates models of the specified type(s). If a colon is used, the types before and after the colon will appear on the left and right sides of the generated models, respectively; with no colon, both sides of the models will have the same type(s). |
-| `--paris` | [yes \| **no**] | Default: **no**. Performs PARIS analysis using the provided SNP or position association test results and LD block regions. See the PARIS Appendix for more information. TODO: what is this and where to link to? |
