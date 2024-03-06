@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Modelling Examples
-parent: Examples
+parent: Simulated Data Examples
 nav_order: 4
 ---
 

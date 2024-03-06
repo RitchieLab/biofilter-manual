@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Examples
+title: Simulated Data Examples
 nav_order: 6
 has_children: true
 ---
 
-# Examples
+# Simulated Data Examples

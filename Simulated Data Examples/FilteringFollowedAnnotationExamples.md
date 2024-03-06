@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Filtering Followed by Annotation Examples
-parent: Examples
+parent: Simulated Data Examples
 nav_order: 3
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PARIS
-parent: Examples
+parent: Simulated Data Examples
 nav_order: 5
 ---
 
