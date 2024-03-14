@@ -19,7 +19,7 @@ Biofilter has a variety of arguments, broadly organized into a few different cat
 | `--model` | \[ \[TYPE1] \[TYPE2] \[...] \[:] \[TYPE1] \[TYPE2] ] | Default: *NONE*. Perform a modeling analysis which generates models of the specified type(s). If a colon is used, the types before and after the colon will appear on the left and right sides of the generated models, respectively; with no colon, both sides of the models will have the same type(s). |
 | `--paris` | [yes \| **no**] | Default: **no**. Performs PARIS analysis using the provided SNP or position association test results and LD block regions. See the PARIS Appendix for more information. TODO: what is this and where to link to? |
 
-# Types for analysis option arguments:
+# Types for Analysis Option Arguments:
 
 | **types** | **Information** |
 |---|---|
