@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Knowledge Sources
-parent: LOKI
+parent: LOKI - Library of Knowledge Integration
 nav_order: 1
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Schema
-parent: LOKI
+parent: LOKI - Library of Knowledge Integration
 nav_order: 2
 ---
 
