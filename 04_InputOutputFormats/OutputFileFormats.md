@@ -16,7 +16,7 @@ Note however that the `INCLUDE` instruction is not relevant for configuration ou
 # Gene and Group Name Statistics Reports
 These reports list all of the types of identifiers available for genes or groups with `--report-gene-name-stats`/`--report-group-name-stats` option, respectively, along with some statistics about their overall uniqueness. 
 
-Examples:
+Examples (TODO need to update numbers?):
 ```
 #type           names       unique      ambiguous
 symbol          254375      251386      2989
