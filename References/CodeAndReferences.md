@@ -1,9 +1,13 @@
 ---
 layout: default
-title: References
+title: Code and References
 nav_order: 8
 has_children: false
 ---
+
+# Open-Source Code
+* [Ritchie Lab GitHub](https://github.com/RitchieLab/biofilter)
+
 
 # References
 

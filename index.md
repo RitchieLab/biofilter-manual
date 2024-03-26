@@ -72,7 +72,3 @@ Just as a single gene can have more than one name, there are also names which ar
 
 Rather than attempting to compromise on a “one size fits all” approach to this ambiguity, Biofilter and LOKI support multiple interpretations of any ambiguity that was encountered while compiling the knowledge database. Each of these interpretations comes with a slightly different trade-off between false-positives and false-negatives, and the interpretation most appropriate to the task can be selected by the user at run-time. This is covered in greater detail in a later section, but it is important to bear in mind that ambiguity will be a part of relating and cross-referencing data across multiple independent sources. Biofilter’s results can change depending on the users choice for handling ambiguity.
 
-# Open-Source Code
-* [Ritchie Lab GitHub](https://github.com/RitchieLab/biofilter)
-
-
