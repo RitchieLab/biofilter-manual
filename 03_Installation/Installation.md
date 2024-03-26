@@ -61,3 +61,15 @@ By default, the LOKI build script will delete all sources’ bulk data downloads
 | `--verbose` | *none* | Prints additional informational messages to the screen; this is the default setting. |
 | `--quiet` | *none* | Suppresses additional informational messages; the opposite of verbose. |
 | `--test-data` | *none* | Switches the build script into test mode, in which it uses an alternate set of source loader modules. These sources do not contain actual biological knowledge; instead, they specify a minimal simulated set of knowledge which can be easily visualized and used to test and understand the functionality of LOKI and Biofilter. Knowledge database files created in test mode cannot be updated in the standard mode, and vice versa. |
+
+## Updating & Archiving Prior Knowledge
+It is important to note that the various data sources integrated into LOKI can publish updated data at any time, according to their own schedules. This new data will not be available to Biofilter until the LOKI prior knowledge database is updated or regenerated.  We recommend that users become familiar with how often the data sources are updated and plan to update LOKI accordingly, preferably at least once every few months.
+
+If a given set of analyses need to be repeatable or verifiable, such as those published in a manuscript, we recommend storing an archived version of the LOKI knowledge database from the time of the analyses. These archived versions of the database can then be used to repeat or augment an analysis based on exactly the same prior knowledge, regardless of any updates that may have occurred in various data sources afterwards. For this purpose it may be useful to include the date in the filename of each newly compiled version of LOKI in order to carefully distinguish between older versions.
+
+
+## LD Profiles (TODO Deprecate?)
+
+Biofilter and LOKI allow for gene regions to be adjusted by the linkage disequilibrium (LD) patterns in a given population. When comparing a known gene region to any other region or position (such as CNVs or SNPs), areas in high LD with a gene can be considered part of the gene, even if the region lies outside of the gene’s canonical boundaries.
+
+LD profiles can be generated using LD Spline, a separate software tool bundled with Biofilter. For more information about LD Spline, please visit the www.ritchielab.upenn.edu website; for details on generating and using LD profiles, see Appendix 2.
