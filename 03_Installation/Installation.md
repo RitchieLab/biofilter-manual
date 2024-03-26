@@ -11,7 +11,7 @@ nav_order: 3
 # Installation Instructions for Biofilter 3.0
 
 ## Prerequisites
-The following prerequisites are required to compile the [LOKI](https://ritchielab.github.io/biofilter-manual/loki/loki.html) and run Biofilter:
+The following prerequisites are required to compile the [LOKI](https://ritchielab.github.io/biofilter-manual/02_LOKI/LOKI.html) and run Biofilter:
 
 * Python3
 * Python module “apsw” (Another Python SQLite Wrapper)

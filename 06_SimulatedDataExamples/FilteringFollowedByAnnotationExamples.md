@@ -11,7 +11,7 @@ nav_order: 3
 # Filtering Followed by Annotation Examples
 ## Example 1: Input a SNP list and Map SNP Positions to Regions
 
-![simulated-filter-annotate](images/simulated-knowledge/simulated-filter_then_annotate_example01.png)
+![simulated-filter-annotate](../images/simulated-knowledge/simulated-filter_then_annotate-example01.png)
 
 Configuration:
 ```
@@ -137,7 +137,7 @@ Output:
 
 ## Example 7: Output of Genes Annotated by Group found in Pathway-Based Input, Filtered by Genotyping Platform
 
-![simulated-filter-annotate](images/simulated-knowledge/simulated-filter_then_annotate_example07.png)
+![simulated-filter-annotate](../images/simulated-knowledge/simulated-filter_then_annotate-example07.png)
 
 Configuration:
 ```

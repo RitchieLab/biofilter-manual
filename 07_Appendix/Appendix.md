@@ -17,7 +17,7 @@ When processing the bulk downloads from prior knowledge sources, however, the si
 
 The testing knowledge included with Biofilter contains several examples of these kinds of situations, depicted in the diagram below. Note that this diagram reflects the fact that there may be multiple names for the same gene (i.e. “D” and “DE” both refer to gene D), and some names may be associated with multiple genes (i.e. “DE” refers to both genes D and E).
 
-![simulated-appendix](images/simulated-knowledge/simulated-appendix01.png)
+![simulated-appendix](../images/simulated-knowledge/simulated-appendix01.png)
 
 The “cyan” group contains three genes, of which the third is ambiguous because we are given two identifiers for it, but one of them refers to two different genes. The “magenta”, “yellow” and “gray/black” groups each contain only one gene, but in each case we are given three different names for that gene which agree or disagree with each other in varying ways. Because of the ambiguity in the provided identifiers, the genes which are considered members of these groups will appear to vary depending on the user’s choice for the ALLOW_AMBIGUOUS_KNOWLEDGE and REDUCE_AMBIGUOUS_KNOWLEDGE options.
 
@@ -76,7 +76,7 @@ Since protein identifiers are expected to correspond to multiple genes, the conc
 
 The testing knowledge included with Biofilter also contains several examples of groups with protein identifiers:
 
-![simulated-appendix](images/simulated-knowledge/simulated-appendix02.png)
+![simulated-appendix](../images/simulated-knowledge/simulated-appendix02.png)
 
 ## Protein Ambiguity Examples
 

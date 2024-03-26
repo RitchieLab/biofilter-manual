@@ -11,7 +11,7 @@ nav_order: 1
 # Annotation Examples
 ## Example 1: Annotating a SNP with Gene Region Information
 
-![simulated-annotate01](images/simulated-knowledge/simulated-annotate-example01.png)
+![simulated-annotate01](../images/simulated-knowledge/simulated-annotate-example01.png)
 
 Configuration:
 ```

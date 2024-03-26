@@ -45,7 +45,7 @@ _Note_: The lists of input SNPs are checked against a dbSNP list of SNP ID’s t
 
 ## Example 2: Output a list of SNPs from a genotyping platform that correspond to a list of genes
 
-![simulated-filter02](images/simulated-knowledge/simulated-filter-example02.png)
+![simulated-filter02](../images/simulated-knowledge/simulated-filter-example02.png)
 
 Input files:
 ```
@@ -123,7 +123,7 @@ G
 
 ## Example 5: Start with a list of genes, output all the genes within particular groups
 
-![simulated-filter05](images/simulated-knowledge/simulated-filter-example05.png)
+![simulated-filter05](../images/simulated-knowledge/simulated-filter-example05.png)
 
 Input files:
 ```

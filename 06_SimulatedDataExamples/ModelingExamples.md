@@ -12,7 +12,7 @@ nav_order: 4
 
 Here we present an example with two sources and eight pathways, to explain how Biofilter can generate pairwise SNP-SNP and Gene-Gene models. In further sections we explain other options for how model generation can be performed in Biofilter.
 
-![simulated-modeling](images/simulated-knowledge/simulated-modeling01.png)
+![simulated-modeling](../images/simulated-knowledge/simulated-modeling01.png)
 
 ## Step 1
 
@@ -53,7 +53,7 @@ Output:
 A       C       2-3
 ```
 
-![simulated-modeling](images/simulated-knowledge/simulated-modeling02.png)
+![simulated-modeling](../images/simulated-knowledge/simulated-modeling02.png)
 
 Biofilter has determined that genes A and C are found together in three groups across two sources. In other words, both the light and paint sources contain groups—blue, gray, and cyan—that suggest a relationship between genes A and C.
 
@@ -78,7 +78,7 @@ rs12        rs15        2-3
 rs12        rs16        2-3
 ```
 
-![simulated-modeling](images/simulated-knowledge/simulated-modeling03.png)
+![simulated-modeling](../images/simulated-knowledge/simulated-modeling03.png)
 
 # Biofilter Modeling
 
