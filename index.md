@@ -18,6 +18,7 @@ While genome-wide association studies (GWAS) have been used to identify genetic 
 Biofilter has three primary analysis modes which each make use of the available biological knowledge in slightly different ways.
 
 ## Filtering
+
 |**Filtering**|![filtering](images/analysis-modes/filtering.png)|Given input data, Biofilter can cross-reference it using stored relationships to generate a filtered dataset of supported data types|
 
 The most straightforward of Biofilter’s primary functions is, as the name implies, filtering. Given any combination of input data, Biofilter can cross-reference the input data using the relationships stored in the knowledge database to generate a filtered dataset of any supported type (or types).
@@ -30,6 +31,7 @@ Finally, filtering is not limited to a single data type: Biofilter can also iden
 
 
 ## Annotation
+
 |**Annotation**|![annotation](images/analysis-modes/annotation.png)|As opposed to ‘Filtering’, input data can be annotated with additional properties without subsetting the original list provided|
 
 Biofilter can also annotate any of the supported data types with respect to any of the others. Like filtering, the annotations are based on the relationships stored in the knowledge database; unlike filtering, any data which cannot be annotated as requested (such as a SNP which is not located within any gene) will still be included in the output, with the annotation columns of the output simply left blank. Put another way, the difference between filtering and annotation is that filtering does not allow any blanks.
@@ -42,6 +44,7 @@ Annotations can also be generated for combinations of data types, or for data ty
 
 
 ## Modeling
+
 |**Modeling**|![modeling](images/analysis-modes/modeling.png)|In addition to cross-referencing stored relationships, combo of input data can be used to reduce the search space with pairwise interactions models and groupings|
 
 The last of Biofilter’s primary analysis modes is a little different from filtering and annotation. In addition to simply cross-referencing any given data with the other available prior knowledge, Biofilter can also search for repeated patterns within the prior knowledge which might indicate the potential for important interactions between SNPs or genes.

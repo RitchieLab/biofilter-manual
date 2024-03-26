@@ -5,6 +5,7 @@ nav_order: 2
 has_children: true
 ---
 
+* TOC
 {:toc}
 
 # Library of Knowledge Integration ('LOKI')

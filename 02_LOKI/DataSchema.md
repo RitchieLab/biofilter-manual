@@ -8,7 +8,6 @@ nav_order: 2
 * TOC
 {:toc}
 
-
 # Data Types
 
 |Symbol|Data Type|Description|

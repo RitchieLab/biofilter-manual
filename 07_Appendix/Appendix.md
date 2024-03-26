@@ -5,6 +5,10 @@ nav_order: 7
 has_children: false
 ---
 
+* TOC
+{:toc}
+
+
 # Appendix 1: Ambiguity in Prior Knowledge
 
 When an ambiguous gene or group identifier appears in a user input file, Biofilter has two straightforward options: either include all genes or groups with which the identifier is associated, or none of them.

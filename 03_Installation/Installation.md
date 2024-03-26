@@ -4,6 +4,10 @@ title: Installation Instructions
 nav_order: 3
 ---
 
+* TOC
+{:toc}
+
+
 # Installation Instructions for Biofilter 3.0
 
 ## Prerequisites
